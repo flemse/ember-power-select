@@ -361,8 +361,8 @@
 
 {{#code-sample as |component|}}
   <pre class="code-sample-snippet {{if (eq component.activeTab 'template') 'active'}}">
-    \{{#power-
-      select options=countries
+    \{{#power-select
+      options=countries
       selected=country
       searchField='name'
       onchange=(action (mut country))
